@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoScroller</string>
+    <string name="fotografia">Fotografia</string>
+    <string name="add">Adicionar</string>
+    <string name="update">Atualizar</string>
+    <string name="delete">Eliminar</string>
+    <string name="empty_product_name">Nome de Fotografia Vazio</string>
+    <string name="product_successfully_added">Produto Adicionado com Sucesso</string>
+</resources>

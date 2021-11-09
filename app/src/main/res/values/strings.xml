@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PhotoScroller</string>
-    <string name="photoscroller_app">PhotoScroller App!</string>
+    <string name="photoscroller_app" translatable="false">PhotoScroller App!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fotografia">Photography</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="empty_product_name">Empty Photography Name!</string>
+    <string name="product_successfully_added">Product Successfully Added</string>
 </resources>
