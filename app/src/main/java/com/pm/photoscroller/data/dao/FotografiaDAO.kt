@@ -17,6 +17,5 @@ interface FotografiaDao {
     fun readAllFotografias(): LiveData<List<Fotografia>>
 
     @Delete
-    fun deleteProduct(fotografia: Fotografia)
-
+    fun deleteFotografia(fotografia: Fotografia)
 }
