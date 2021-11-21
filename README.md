@@ -1,5 +1,20 @@
 # MobileProgramming
 
+Dia 21/11/2021
+Foi necessário recomeçar por causa da arquitetura do novo CPU.
+  - Feito:
+    - Fragmens (Add, Update, List, ListAdapter);
+    - Dao;
+    - Database;
+    - Viewmodels;
+    - Entities;
+    - Repository;
+  - Falta:
+    - Adicionar Icon Save;
+    - Colocar a guardar na BD;
+    - Criação de Viewmodels Add e List;
+    - Criação de Menu;
+
 Aula 09/11/21 - Prática
   - Criação do Menu
   - Criação de Package Fragment
