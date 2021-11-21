@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhotoScroller</string>
+    <string name="fotografia_successfully_added">Picture Successfully Added</string>
+    <string name="fotografia_successfully_updated">Picture Updated Successfully</string>
+    <string name="fotografia_successfully_deleted">Picture Deleted Successfully</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="empty_fotografia_name">Picture name is empty!</string>
+    <string name="delete">Delete</string>
+    <string name="question_delete">Delete?</string>
+</resources>

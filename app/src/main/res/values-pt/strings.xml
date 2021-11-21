@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PhotoScroller</string>
+    <string name="fotografia_successfully_added">Fotografia Adicionada com Sucesso</string>
+    <string name="fotografia_successfully_updated">Fotografia Atualizada com Sucesso</string>
+    <string name="fotografia_successfully_deleted">"Fotografia Apagada com Sucesso "</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="empty_fotografia_name">Nome da Fotografia está vazio!</string>
+    <string name="delete">Apagar</string>
+    <string name="question_delete">Apagar?</string>
+</resources>
