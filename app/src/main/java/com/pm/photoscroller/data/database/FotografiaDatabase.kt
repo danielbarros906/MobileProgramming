@@ -7,9 +7,10 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pm.photoscroller.data.dao.FotografiaDAO
 import com.pm.photoscroller.data.entities.Fotografia
+import com.pm.photoscroller.data.entities.User
 import java.security.AccessControlContext
 
-@Database(entities = [Fotografia :: class],
+@Database(entities = [Fotografia :: class, User::class],
     version = 2,
     exportSchema = true,
     autoMigrations = [AutoMigration (from = 1, to = 2)])
