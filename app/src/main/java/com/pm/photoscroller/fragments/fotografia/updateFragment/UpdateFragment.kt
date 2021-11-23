@@ -12,6 +12,10 @@ import androidx.navigation.fragment.navArgs
 import com.pm.photoscroller.R
 import com.pm.photoscroller.data.entities.Fotografia
 import com.pm.photoscroller.data.viewmodel.FotografiaViewModel
+import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
+import kotlinx.android.synthetic.main.fragment_add.*
+import kotlinx.android.synthetic.main.fragment_update.*
+import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class UpdateFragment : Fragment() {
     private val args by navArgs<UpdateFragmentArgs>()
@@ -34,7 +38,7 @@ class UpdateFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //hideKeyboard()
+        hideKeyboard()
         if (item.itemId == R.id.menu_update){
             updateFotografia()
         }

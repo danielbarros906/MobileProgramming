@@ -9,4 +9,6 @@
     <string name="empty_fotografia_name">Nome da Fotografia está vazio!</string>
     <string name="delete">Apagar</string>
     <string name="question_delete">Apagar?</string>
+    <string name="addFotografia">Adicionar Nova Fotografia</string>
+    <string name="updateFotografia">Atualizar Fotografia</string>
 </resources>

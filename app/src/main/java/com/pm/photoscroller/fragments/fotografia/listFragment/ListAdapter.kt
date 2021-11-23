@@ -20,7 +20,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ListAdapter.MyViewHolder, position: Int) {
-        val currentItem = productList[position]
+        val currentItem = fotografiaList[position]
         holder.itemView.lst_fotografiatId.text = currentItem.id.toString()
         holder.itemView.lst_fotografiaName.text = currentItem.name
 
@@ -41,7 +41,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         return fotografiaList.size
     }
 
-    fun setData(products: List<Fotografia>){
+    fun setData(fotografia: List<Fotografia>){
         this.fotografiaList = fotografia
         notifyDataSetChanged()
     }

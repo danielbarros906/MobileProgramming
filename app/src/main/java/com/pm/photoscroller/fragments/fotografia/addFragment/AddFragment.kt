@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.pm.photoscroller.R
 import com.pm.photoscroller.data.entities.Fotografia
 import com.pm.photoscroller.data.viewmodel.FotografiaViewModel
+import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_add.*
 
 class AddFragment: Fragment() {
@@ -28,11 +29,11 @@ class AddFragment: Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_add_product, menu)
+        inflater.inflate(R.menu.menu_add_photo, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //hideKeyboard()
+        hideKeyboard()
 
         if (item.itemId == R.id.menu_add){
             addFotografia()
