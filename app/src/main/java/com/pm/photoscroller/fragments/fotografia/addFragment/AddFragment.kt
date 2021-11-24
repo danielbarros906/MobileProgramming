@@ -50,7 +50,7 @@ class AddFragment: Fragment() {
             ).show()
         }
 
-        val fotografia = Fotografia(0, fotografiaName.text.toString(), "")
+        val fotografia = Fotografia(0, fotografiaName.text.toString())
         mFotografiaViewModel.addFotografia(fotografia)
 
         Toast.makeText(

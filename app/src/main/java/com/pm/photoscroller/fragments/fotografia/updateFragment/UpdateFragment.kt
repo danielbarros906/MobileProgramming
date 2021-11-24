@@ -55,7 +55,7 @@ class UpdateFragment : Fragment() {
                 Toast.LENGTH_LONG
             ).show()
         }
-        val fotografia = Fotografia(args.currentFotografia.id, updateFotografiaName.text.toString(),"")
+        val fotografia = Fotografia(args.currentFotografia.id, updateFotografiaName.text.toString())
         mFotografiaViewModel.updateFotografia(fotografia)
 
         Toast.makeText(
