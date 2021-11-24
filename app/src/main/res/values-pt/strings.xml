@@ -11,4 +11,5 @@
     <string name="question_delete">Apagar?</string>
     <string name="addFotografia">Adicionar Nova Fotografia</string>
     <string name="updateFotografia">Atualizar Fotografia</string>
+    <string name="save">Guardar</string>
 </resources>

@@ -26,6 +26,13 @@
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck"
             android:inputType="text" />
+        <EditText
+            android:id="@+id/fotografiaISO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="text" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

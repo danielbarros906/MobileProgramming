@@ -30,5 +30,13 @@
             android:textSize="25dp"
             android:padding="5dp"
             android:text="Name"/>
+
+        <TextView
+            android:id="@+id/lst_fotografiaISO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:padding="5dp"
+            android:text="ISO"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

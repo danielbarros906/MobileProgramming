@@ -11,5 +11,6 @@ import kotlinx.android.parcel.Parcelize
 class Fotografia(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
-    val name: String
+    val name: String,
+    val iso: String
 ) : Parcelable

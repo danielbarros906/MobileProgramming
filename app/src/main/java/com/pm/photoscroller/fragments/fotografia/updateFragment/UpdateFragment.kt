@@ -14,8 +14,10 @@ import com.pm.photoscroller.data.entities.Fotografia
 import com.pm.photoscroller.data.viewmodel.FotografiaViewModel
 import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_add.*
+import kotlinx.android.synthetic.main.fragment_add.view.*
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
+
 
 class UpdateFragment : Fragment() {
     private val args by navArgs<UpdateFragmentArgs>()
@@ -28,8 +30,13 @@ class UpdateFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_update, container, false)
         mFotografiaViewModel = ViewModelProvider(this).get(FotografiaViewModel::class.java)
-        view.updateFotografiaName.setText(args.currentProduct.name)
+
+        view.updateFotografiaName.setText(args.currentFotografia.name)
+        view.updateFotografiaISO.setText(args.currentFotografia.iso)
+
+
         setHasOptionsMenu(true)
+
         return view
     }
 
@@ -55,7 +62,7 @@ class UpdateFragment : Fragment() {
                 Toast.LENGTH_LONG
             ).show()
         }
-        val fotografia = Fotografia(args.currentFotografia.id, updateFotografiaName.text.toString())
+        val fotografia = Fotografia(args.currentFotografia.id, updateFotografiaName.text.toString(),updateFotografiaISO.text.toString())
         mFotografiaViewModel.updateFotografia(fotografia)
 
         Toast.makeText(

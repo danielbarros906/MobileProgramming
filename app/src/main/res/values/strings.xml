@@ -11,4 +11,5 @@
     <string name="addFotografia">Add New Photo</string>
     <string name="updateFotografia">Update Photo</string>
     <string name="placeholder" translatable="false">Placeholder</string>
+    <string name="save">Save</string>
 </resources>

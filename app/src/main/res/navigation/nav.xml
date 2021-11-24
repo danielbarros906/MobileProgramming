@@ -6,15 +6,6 @@
     app:startDestination="@id/listFragment">
 
     <fragment
-        android:id="@+id/addFragment"
-        android:name="com.pm.photoscroller.fragments.fotografia.addFragment.AddFragment"
-        android:label="fragment_add"
-        tools:layout="@layout/fragment_add" >
-        <action
-            android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/updateFragment"
         android:name="com.pm.photoscroller.fragments.fotografia.updateFragment.UpdateFragment"
         android:label="fragment_update"
@@ -22,6 +13,9 @@
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <argument
+            android:name="currentFotografia"
+            app:argType="com.pm.photoscroller.data.entities.Fotografia"/>
     </fragment>
     <fragment
         android:id="@+id/listFragment"
@@ -34,5 +28,15 @@
         <action
             android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.pm.photoscroller.fragments.fotografia.addFragment.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 </navigation>

@@ -12,6 +12,7 @@ import com.pm.photoscroller.data.entities.Fotografia
 import com.pm.photoscroller.data.viewmodel.FotografiaViewModel
 import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_add.*
+import kotlinx.android.synthetic.main.fragment_add.view.*
 
 class AddFragment: Fragment() {
 
@@ -25,6 +26,7 @@ class AddFragment: Fragment() {
         val view = inflater.inflate(R.layout.fragment_add, container, false)
         setHasOptionsMenu(true)
         mFotografiaViewModel = ViewModelProvider(this).get(FotografiaViewModel::class.java)
+
         return view
     }
 
@@ -50,7 +52,7 @@ class AddFragment: Fragment() {
             ).show()
         }
 
-        val fotografia = Fotografia(0, fotografiaName.text.toString())
+        val fotografia = Fotografia(0, fotografiaName.text.toString(), fotografiaISO.text.toString())
         mFotografiaViewModel.addFotografia(fotografia)
 
         Toast.makeText(

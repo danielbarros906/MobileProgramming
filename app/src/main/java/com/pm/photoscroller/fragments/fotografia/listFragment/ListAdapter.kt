@@ -23,6 +23,8 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         val currentItem = fotografiaList[position]
         holder.itemView.lst_fotografiatId.text = currentItem.id.toString()
         holder.itemView.lst_fotografiaName.text = currentItem.name
+        holder.itemView.lst_fotografiaISO.text = currentItem.iso
+
 
         if(position%2 == 0){
             holder.itemView.rowLayout.setBackgroundColor(Color.parseColor("#d6d4e0"))
