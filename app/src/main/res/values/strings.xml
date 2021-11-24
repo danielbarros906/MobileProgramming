@@ -12,4 +12,8 @@
     <string name="updateFotografia">Update Photo</string>
     <string name="placeholder" translatable="false">Placeholder</string>
     <string name="save">Save</string>
+    <string name="name">Photo Name</string>
+    <string name="iso" translatable="false">ISO</string>
+    <string name="photo_name">Photo Name</string>
+    <string name="photo_id">Photo ID</string>
 </resources>

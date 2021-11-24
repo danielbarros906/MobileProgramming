@@ -8,7 +8,8 @@ import androidx.room.RoomDatabase
 import com.pm.photoscroller.data.dao.FotografiaDAO
 import com.pm.photoscroller.data.entities.Fotografia
 
-@Database(entities = [Fotografia::class],
+@Database(
+    entities = [Fotografia::class],
     version = 3,
     exportSchema = true,
     autoMigrations = [AutoMigration (from = 2, to = 3)])
