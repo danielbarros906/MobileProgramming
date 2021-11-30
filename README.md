@@ -2,6 +2,7 @@
 ---
 # Dia 30/11/2021
 Funcionalidades base da aplicação encontram-se concluidas.
+
 ---
 # Dia 21/11/2021
 Foi necessário recomeçar por causa da arquitetura do novo CPU.
@@ -18,7 +19,7 @@ Foi necessário recomeçar por causa da arquitetura do novo CPU.
     - Criação de Viewmodels Add e List;
     - Criação de Menu;
 ---
-Aula 09/11/21 - Prática
+# Aula 09/11/21 - Prática
   - Criação do Menu
   - Criação de Package Fragment
   - Criação de Navegação (nav)
@@ -26,6 +27,6 @@ Aula 09/11/21 - Prática
   - Criação Viewmodels Add e List
   - Guardar na BD
 ---
-Aula 09/11/21
+# Aula 09/11/21
   - Concluido ViewModel e Repository;
   - Adição de Icon Save;
