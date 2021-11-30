@@ -49,9 +49,6 @@
                 tools:ignore="SpeakableTextPresentCheck"
                 android:inputType="text" />
         </RelativeLayout>
-
-
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
