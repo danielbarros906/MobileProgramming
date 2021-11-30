@@ -1,5 +1,8 @@
 # MobileProgramming
 
+Dia 30/11/2021
+Funcionalidades base da aplicação encontram-se concluidas.
+
 Dia 21/11/2021
 Foi necessário recomeçar por causa da arquitetura do novo CPU.
   - Feito:
