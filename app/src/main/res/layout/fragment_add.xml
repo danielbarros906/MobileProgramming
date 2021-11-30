@@ -25,13 +25,14 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/fotografiaName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="text"
                 android:minHeight="48dp"
-                tools:ignore="SpeakableTextPresentCheck"
-                android:inputType="text" />
+                tools:ignore="SpeakableTextPresentCheck" />
         </RelativeLayout>
         <TextView
             android:layout_width="wrap_content"
