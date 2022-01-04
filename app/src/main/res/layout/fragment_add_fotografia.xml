@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.fotografia.addFotografia.AddFotografiaFragment">
+
+    <include
+        android:id="@+id/llProgressBar"
+        layout="@layout/progressbar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout_add_fotografia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/description"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/location"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/iso"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_ISO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/shutter"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_shutter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/aperture"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_aperture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10sp"
+            android:text="@string/photo_path"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/add_fotografia_photo_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_listFragment_to_addFragment"
             app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
     </fragment>
 
     <fragment
@@ -38,5 +41,58 @@
         <action
             android:id="@+id/action_addFragment_to_listFragment"
             app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.pm.photoscroller.fragments.fotografia.login.UserLoginFragment"
+        android:label="UserLoginFragment" >
+        <action
+            android:id="@+id/action_userLoginFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_fotografiaListFragment"
+            app:destination="@id/fotografiaListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fotografiaListFragment"
+        android:name="com.pm.photoscroller.fragments.fotografia.listFotografia.FotografiaListFragment"
+        android:label="fragment_fotografias_list"
+        tools:layout="@layout/fragment_fotografias_list" >
+        <action
+            android:id="@+id/action_fotografiaListFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_fotografiaListFragment_to_addFotografiaFragment"
+            app:destination="@id/addFotografiaFragment" />
+        <action
+            android:id="@+id/action_fotografiaListFragment_to_updateFotografiaFragment"
+            app:destination="@id/updateFotografiaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFotografiaFragment"
+        android:name="com.pm.photoscroller.fragments.fotografia.updateFotografia.UpdateFotografiaFragment"
+        android:label="fragment_update_fotografia"
+        tools:layout="@layout/fragment_update_fotografia" >
+        <action
+            android:id="@+id/action_updateFotografiaFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_updateFotografiaFragment_to_fotografiaListFragment"
+            app:destination="@id/fotografiaListFragment" />
+        <argument
+            android:name="currentPic"
+            app:argType="com.pm.photoscroller.api.models.Fotografia" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFotografiaFragment"
+        android:name="com.pm.photoscroller.fragments.fotografia.addFotografia.AddFotografiaFragment"
+        android:label="fragment_add_fotografia"
+        tools:layout="@layout/fragment_add_fotografia" >
+        <action
+            android:id="@+id/action_addFotografiaFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_addFotografiaFragment_to_fotografiaListFragment"
+            app:destination="@id/fotografiaListFragment" />
     </fragment>
 </navigation>

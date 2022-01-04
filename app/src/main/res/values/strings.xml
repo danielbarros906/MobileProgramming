@@ -16,4 +16,28 @@
     <string name="iso" translatable="false">ISO</string>
     <string name="photo_name">Photo Name</string>
     <string name="photo_id">Photo ID</string>
+    <string name="fill_username_and_password">Please fill Username and Password!</string>
+    <string name="hello">Hello</string>
+    <string name="session_expired">Session Expired</string>
+    <string name="session_expired_message">The session has expired!</string>
+    <string name="signin">Sign In</string>
+    <string name="error_something_went_wrong">Ups! Something went wrong...</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="username">Username</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="logout">Logout</string>
+    <string name="refresh">Refresh</string>
+    <string name="logout_question">Logout?</string>
+    <string name="only_edit_your_fotografias">You can only edit your own photos!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="fill_title_description_and_location">Please fill title, desription and location!</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="fill_all_fields">Please fill all fields!</string>
+    <string name="shutter">Shutter</string>
+    <string name="aperture">Aperture</string>
+    <string name="photo_path">Photo Path</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

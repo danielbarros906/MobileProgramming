@@ -15,4 +15,23 @@
     <string name="name">Nome da Fotografia</string>
     <string name="photo_name">Nome da Fotografia</string>
     <string name="photo_id">ID da Fotografia</string>
+    <string name="fill_username_and_password">Por favor preencha nome de utilizador e password!</string>
+    <string name="hello">Olá</string>
+    <string name="session_expired">Sessão Expirou</string>
+    <string name="session_expired_message">A sua sessão expirou!</string>
+    <string name="signin">Entrar</string>
+    <string name="error_something_went_wrong">Ups! Algo correu mal...</string>
+    <string name="username">Nome utilizador</string>
+    <string name="logout">Sair</string>
+    <string name="refresh">Atualizar</string>
+    <string name="logout_question">Sair?</string>
+    <string name="only_edit_your_fotografias">Apenas consegues editar as tuas próprias fotos!</string>
+    <string name="fill_title_description_and_location">Por favor preencha titulo, descrição e localização!</string>
+    <string name="title">Titulo</string>
+    <string name="description">Descrição</string>
+    <string name="location">Localização</string>
+    <string name="fill_all_fields">Por favor preencha todos os campos!</string>
+    <string name="aperture">Abertura da Objetiva</string>
+    <string name="shutter" translatable="false">"Velocidade do obturador "</string>
+    <string name="photo_path">Caminho para Fotografia</string>
 </resources>
