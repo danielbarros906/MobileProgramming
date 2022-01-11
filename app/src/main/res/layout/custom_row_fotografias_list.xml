@@ -70,7 +70,7 @@
             android:text="Photo Path"/>
 
         <TextView
-            android:id="@+id/fotografia_list_upload_date"
+            android:id="@+id/fotografia_list_created_at"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"

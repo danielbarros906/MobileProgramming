@@ -101,7 +101,7 @@ class UpdateFotografiaFragment : Fragment() {
                             }
                         }else{
                             if (response.code()==401){
-                                unauthorized(navigatonHandlder = {
+                                unauthorized(navigationHandler = {
                                     findNavController().navigate(R.id.action_updateFotografiaFragment_to_userLoginFragment)
                                 })
                             }else{
@@ -153,7 +153,7 @@ class UpdateFotografiaFragment : Fragment() {
                             }
                         }else{
                             if (response.code()==401){
-                                unauthorized(navigatonHandlder = {
+                                unauthorized(navigationHandler = {
                                     findNavController().navigate(R.id.action_updateFotografiaFragment_to_userLoginFragment)
                                 })
                             }else{

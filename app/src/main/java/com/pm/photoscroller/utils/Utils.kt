@@ -36,12 +36,12 @@ class Utils {
 
             return users_id
         }
-        fun Fragment.unauthorized(navigatonHandlder : () -> Unit){
+        fun Fragment.unauthorized(navigationHandler : () -> Unit){
             val builder = AlertDialog.Builder(requireContext())
             builder.setPositiveButton(getString(R.string.signin)) { _, _ ->
                 val preferences = requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE)
                 preferences.edit().putString("token", null).apply()
-                navigatonHandlder()
+                navigationHandler()
             }
             builder.setTitle(getString(R.string.session_expired))
             builder.setMessage(getString((R.string.session_expired_message)))

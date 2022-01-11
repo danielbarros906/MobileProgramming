@@ -7,13 +7,13 @@ import kotlinx.android.parcel.Parcelize
 data class Fotografia (
     val id: Int,
     val title: String,
-    val aperture: Float,
-    val shutter: Int,
-    val iso: Int,
+    val aperture: String,
+    val shutter: String,
+    val iso: String,
     val description: String,
     val location: String,
     val users_id: Int,
-    val upload_date: String,
+    val created_at: String,
     val user_name: String,
     val photo_path: String
     ):Parcelable

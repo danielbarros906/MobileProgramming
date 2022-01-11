@@ -19,9 +19,9 @@ interface FotografiaAPI {
         @Field("title") title: String,
         @Field("description") description: String,
         @Field("location") location: String,
-        @Field("aperture") aperture: Float,
-        @Field("shutter") shutter: Int,
-        @Field("iso") iso: Int,
+        @Field("aperture") aperture: String,
+        @Field("shutter") shutter: String,
+        @Field("iso") iso: String,
         @Field("photo_path") photo_path: String
     ): Call<FotografiaDto>
 

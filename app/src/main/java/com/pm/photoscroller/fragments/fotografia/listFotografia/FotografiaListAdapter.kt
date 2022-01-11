@@ -36,10 +36,10 @@ class FotografiaListAdapter ( userIdInSession: String?) : RecyclerView.Adapter<F
         val currentItem = fotografiaList[position]
         holder.itemView.fotografia_list_title .text = currentItem.title
         holder.itemView.fotografia_list_description .text = currentItem.description
-        holder.itemView.fotografia_list_upload_date .text = currentItem.upload_date
-        //holder.itemView.fotografia_list_iso .text = currentItem.iso
-        //holder.itemView.fotografia_list_shutter .text = currentItem.shutter
-        //holder.itemView.fotografia_list_aperture .text = currentItem.aperture
+        holder.itemView.fotografia_list_iso.text = currentItem.iso
+        holder.itemView.fotografia_list_created_at.text = currentItem.created_at
+        holder.itemView.fotografia_list_shutter .text = currentItem.shutter
+        holder.itemView.fotografia_list_aperture .text = currentItem.aperture
         holder.itemView.fotografia_list_location .text = currentItem.location
         holder.itemView.fotografia_list_created_by .text = currentItem.user_name
         holder.itemView.fotografia_list_photo_path .text = currentItem.photo_path
@@ -53,10 +53,10 @@ class FotografiaListAdapter ( userIdInSession: String?) : RecyclerView.Adapter<F
 
         holder.itemView.rowLayout_fotografias_list.setOnClickListener{
             if (_userIdInSession == currentItem.users_id.toString()){
-                //val action = FotografiasListFragmentDirections.actionFotografiaListFragmenttoUpdateFotografiaFragment(
-                //    currentItem
-                //)
-                //holder.itemView.findNavController().navigate(action)
+                val action = FotografiaListFragmentDirections.actionFotografiaListFragmentToUpdateFotografiaFragment(
+                    currentItem
+                )
+                holder.itemView.findNavController().navigate(action)
             }else{
                 Toast.makeText(_ctx,R.string.only_edit_your_fotografias, Toast.LENGTH_LONG).show()
             }

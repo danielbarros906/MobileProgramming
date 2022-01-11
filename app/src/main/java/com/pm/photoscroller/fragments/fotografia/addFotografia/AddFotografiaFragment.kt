@@ -70,9 +70,9 @@ class AddFotografiaFragment : Fragment() {
                 title = add_fotografia_title.text.toString(),
                 description = add_fotografia_description.text.toString(),
                 location = add_fotografia_location.text.toString(),
-                iso = add_fotografia_ISO.text.toString().toInt(),
-                shutter = add_fotografia_shutter.text.toString().toInt(),
-                aperture = add_fotografia_aperture.text.toString().toFloat(),
+                iso = add_fotografia_ISO.text.toString(),
+                shutter = add_fotografia_shutter.text.toString(),
+                aperture = add_fotografia_aperture.text.toString(),
                 photo_path = add_fotografia_photo_path.text.toString()
             )
             call.enqueue(object : Callback<FotografiaDto>{
@@ -104,7 +104,7 @@ class AddFotografiaFragment : Fragment() {
                             }
                         }else{
                             if (response.code()==401){
-                                unauthorized(navigatonHandlder = {
+                                unauthorized(navigationHandler = {
                                     findNavController().navigate(R.id.action_addFotografiaFragment_to_userLoginFragment)
                                 })
                             }else{

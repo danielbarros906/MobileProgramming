@@ -84,7 +84,7 @@ class FotografiaListFragment : Fragment() {
                         adapter.setData(fotografia)
                     }else{
                         if (response.code()==401){
-                            unauthorized(navigatonHandlder = {
+                            unauthorized(navigationHandler = {
                                 findNavController().navigate(R.id.action_fotografiaListFragment_to_userLoginFragment)
                             })
                         }else{
