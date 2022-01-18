@@ -16,6 +16,7 @@ import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import com.pm.photoscroller.utils.Utils.Companion.somethingWentWrong
 import com.pm.photoscroller.utils.Utils.Companion.unauthorized
 import kotlinx.android.synthetic.main.fragment_add_fotografia.*
+import kotlinx.android.synthetic.main.fragment_add_fotografia.view.*
 import kotlinx.android.synthetic.main.fragment_fotografias_list.*
 import kotlinx.android.synthetic.main.fragment_user_login.*
 import kotlinx.android.synthetic.main.fragment_user_login.llProgressBar
@@ -31,6 +32,18 @@ class AddFotografiaFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_add_fotografia, container, false)
         setHasOptionsMenu(true)
+
+
+        view.add_fotografia_title.setText("ola");
+        view.add_fotografia_description.setText("mundo");
+        view.add_fotografia_aperture.setText("100");
+        view.add_fotografia_ISO.setText("300");
+        view.add_fotografia_location.setText("Porto");
+        view.add_fotografia_shutter.setText("60");
+        view.add_fotografia_photo_path.setText("caminho");
+
+
+
         return view
     }
 
@@ -64,8 +77,13 @@ class AddFotografiaFragment : Fragment() {
             llProgressBar.bringToFront()
             llProgressBar.visibility = View.VISIBLE
             val request = ServiceBuilder.buildService(FotografiaAPI::class.java)
+
+
+            val t = "Bearer " + getToken()
+
+
             val call = request.createFotografia(
-                token = "Bearer ${getToken()}",
+                token = t,
                 users_id = getUserIdInSession(),
                 title = add_fotografia_title.text.toString(),
                 description = add_fotografia_description.text.toString(),

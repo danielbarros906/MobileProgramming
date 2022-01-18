@@ -38,6 +38,10 @@ class UpdateFotografiaFragment : Fragment() {
         view.update_fotografia_title.setText(args.currentPic.title)
         view.update_fotografia_description.setText(args.currentPic.description)
         view.update_fotografia_location.setText(args.currentPic.location)
+        view.update_fotografia_iso.setText(args.currentPic.iso)
+        view.update_fotografia_aperture.setText(args.currentPic.aperture)
+        view.update_fotografia_shutter.setText(args.currentPic.shutter)
+
 
         return view
     }
@@ -58,7 +62,10 @@ class UpdateFotografiaFragment : Fragment() {
     }
 
     private fun updateFotografia(){
-        if (TextUtils.isEmpty(update_fotografia_title.text.toString()) || TextUtils.isEmpty(update_fotografia_description.text.toString()) || TextUtils.isEmpty(update_fotografia_location.text.toString())){
+        if (
+            TextUtils.isEmpty(update_fotografia_title.text.toString()) ||
+            TextUtils.isEmpty(update_fotografia_description.text.toString()) ||
+            TextUtils.isEmpty(update_fotografia_location.text.toString())){
             Toast.makeText(
                 requireContext(),
                 getString(R.string.fill_title_description_and_location),
@@ -71,6 +78,9 @@ class UpdateFotografiaFragment : Fragment() {
                 id = args.currentPic.id,
                 title = update_fotografia_title.text.toString(),
                 description = update_fotografia_description.text.toString(),
+                shutter = update_fotografia_shutter.text.toString(),
+                iso = update_fotografia_iso.text.toString(),
+                aperture = update_fotografia_aperture.text.toString(),
                 location = update_fotografia_location.text.toString()
             )
             call.enqueue(object : Callback<FotografiaDto>{

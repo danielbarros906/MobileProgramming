@@ -10,7 +10,6 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.pm.photoscroller.R
 import com.pm.photoscroller.api.models.Fotografia
-import kotlinx.android.synthetic.main.custom_row.view.*
 import kotlinx.android.synthetic.main.custom_row_fotografias_list.view.*
 
 class FotografiaListAdapter ( userIdInSession: String?) : RecyclerView.Adapter<FotografiaListAdapter.MyViewHolder>(){
@@ -34,15 +33,16 @@ class FotografiaListAdapter ( userIdInSession: String?) : RecyclerView.Adapter<F
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = fotografiaList[position]
-        holder.itemView.fotografia_list_title .text = currentItem.title
-        holder.itemView.fotografia_list_description .text = currentItem.description
+        holder.itemView.fotografia_list_title.text = currentItem.title
+        holder.itemView.fotografia_list_description.text = currentItem.description
         holder.itemView.fotografia_list_iso.text = currentItem.iso
         holder.itemView.fotografia_list_created_at.text = currentItem.created_at
-        holder.itemView.fotografia_list_shutter .text = currentItem.shutter
-        holder.itemView.fotografia_list_aperture .text = currentItem.aperture
-        holder.itemView.fotografia_list_location .text = currentItem.location
-        holder.itemView.fotografia_list_created_by .text = currentItem.user_name
-        holder.itemView.fotografia_list_photo_path .text = currentItem.photo_path
+        holder.itemView.fotografia_list_shutter.text = currentItem.shutter
+        holder.itemView.fotografia_list_aperture.text = currentItem.aperture
+        holder.itemView.fotografia_list_location.text = currentItem.location
+        holder.itemView.fotografia_list_created_by.text = currentItem.users_id
+        holder.itemView.fotografia_list_created_by_name.text = currentItem.user_name
+        holder.itemView.fotografia_list_photo_path.text = currentItem.photo_path
 
         if(position%2 == 0){
             holder.itemView.setBackgroundColor(Color.parseColor("#d6d4e0"))
@@ -52,7 +52,7 @@ class FotografiaListAdapter ( userIdInSession: String?) : RecyclerView.Adapter<F
         }
 
         holder.itemView.rowLayout_fotografias_list.setOnClickListener{
-            if (_userIdInSession == currentItem.users_id.toString()){
+            if (_userIdInSession == currentItem.users_id){
                 val action = FotografiaListFragmentDirections.actionFotografiaListFragmentToUpdateFotografiaFragment(
                     currentItem
                 )

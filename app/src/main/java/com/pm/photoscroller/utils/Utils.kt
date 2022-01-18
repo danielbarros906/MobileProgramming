@@ -26,15 +26,13 @@ class Utils {
         }
         fun Fragment.getToken(): String? {
             val preferences = requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE)
-            val token = preferences.getString("token", null)
 
-            return token
+            return preferences.getString("token", null)
         }
         fun Fragment.getUserIdInSession(): String? {
             val preferences = requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE)
-            val users_id = preferences.getString("user_id", null)
 
-            return users_id
+            return preferences.getString("users_id", null)
         }
         fun Fragment.unauthorized(navigationHandler : () -> Unit){
             val builder = AlertDialog.Builder(requireContext())

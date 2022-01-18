@@ -76,7 +76,7 @@ class UserLoginFragment : Fragment(){
     fun setUserSettings(userDto: UserDto){
         val preferences = requireActivity().getSharedPreferences("pref", Context.MODE_PRIVATE)
         preferences.edit().putString("token", userDto.token).apply()
-        preferences.edit().putString("username", userDto.user.first().id.toString()).apply()
+        preferences.edit().putString("users_id", userDto.user.first().id.toString()).apply()
         preferences.edit().putString("name", userDto.user.first().name).apply()
     }
 }

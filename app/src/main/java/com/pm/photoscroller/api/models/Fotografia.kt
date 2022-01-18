@@ -12,7 +12,7 @@ data class Fotografia (
     val iso: String,
     val description: String,
     val location: String,
-    val users_id: Int,
+    val users_id: String,
     val created_at: String,
     val user_name: String,
     val photo_path: String
