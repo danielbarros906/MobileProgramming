@@ -34,4 +34,6 @@
     <string name="aperture">Abertura da Objetiva</string>
     <string name="shutter" translatable="false">"Velocidade do obturador "</string>
     <string name="photo_path">Caminho para Fotografia</string>
+    <string name="amazing">Fotografia Fantástica</string>
+    <string name="youRhere">Está aqui!</string>
 </resources>

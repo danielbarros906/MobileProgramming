@@ -2,6 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+    <item android:id="@+id/map"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
     <item android:id="@+id/fotografia_list_refresh"
         android:title="@string/refresh"
         android:icon="@drawable/ic_baseline_refresh_24"
@@ -13,4 +20,5 @@
         android:icon="@drawable/ic_baseline_logout_24"
         android:iconTint="@android:color/white"
         app:showAsAction="ifRoom"/>
+
 </menu>

@@ -16,9 +16,6 @@ import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import com.pm.photoscroller.utils.Utils.Companion.somethingWentWrong
 import com.pm.photoscroller.utils.Utils.Companion.unauthorized
 import kotlinx.android.synthetic.main.fragment_add_fotografia.*
-import kotlinx.android.synthetic.main.fragment_add_fotografia.view.*
-import kotlinx.android.synthetic.main.fragment_fotografias_list.*
-import kotlinx.android.synthetic.main.fragment_user_login.*
 import kotlinx.android.synthetic.main.fragment_user_login.llProgressBar
 import retrofit2.Call
 import retrofit2.Callback

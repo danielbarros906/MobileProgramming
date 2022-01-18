@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_fotografiaListFragment_to_updateFotografiaFragment"
             app:destination="@id/updateFotografiaFragment" />
+        <action
+            android:id="@+id/action_fotografiaListFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/updateFotografiaFragment"
@@ -93,6 +96,14 @@
             app:destination="@id/userLoginFragment" />
         <action
             android:id="@+id/action_addFotografiaFragment_to_fotografiaListFragment"
+            app:destination="@id/fotografiaListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.pm.photoscroller.MapsFragment"
+        android:label="MapsFragment" >
+        <action
+            android:id="@+id/action_mapsFragment_to_fotografiaListFragment"
             app:destination="@id/fotografiaListFragment" />
     </fragment>
 </navigation>

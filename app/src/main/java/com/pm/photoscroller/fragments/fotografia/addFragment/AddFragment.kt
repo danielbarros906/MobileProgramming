@@ -12,7 +12,6 @@ import com.pm.photoscroller.data.entities.Fotografia
 import com.pm.photoscroller.data.viewmodel.FotografiaViewModel
 import com.pm.photoscroller.utils.Utils.Companion.hideKeyboard
 import kotlinx.android.synthetic.main.fragment_add.*
-import kotlinx.android.synthetic.main.fragment_add.view.*
 
 class AddFragment: Fragment() {
 

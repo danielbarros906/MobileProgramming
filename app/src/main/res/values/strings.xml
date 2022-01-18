@@ -39,5 +39,7 @@
     <string name="shutter">Shutter</string>
     <string name="aperture">Aperture</string>
     <string name="photo_path">Photo Path</string>
+    <string name="amazing">Amazing Picture</string>
+    <string name="youRhere">You are here!</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

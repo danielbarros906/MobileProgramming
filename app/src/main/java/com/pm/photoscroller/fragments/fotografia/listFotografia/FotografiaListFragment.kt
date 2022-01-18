@@ -7,6 +7,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.pm.photoscroller.MapsFragment
 import com.pm.photoscroller.R
 import com.pm.photoscroller.api.models.Fotografia
 import com.pm.photoscroller.api.requests.FotografiaAPI
@@ -18,9 +19,6 @@ import com.pm.photoscroller.utils.Utils.Companion.somethingWentWrong
 import com.pm.photoscroller.utils.Utils.Companion.unauthorized
 import kotlinx.android.synthetic.main.fragment_fotografias_list.*
 import kotlinx.android.synthetic.main.fragment_fotografias_list.view.*
-import kotlinx.android.synthetic.main.fragment_list.view.*
-import kotlinx.android.synthetic.main.fragment_user_login.*
-import kotlinx.android.synthetic.main.fragment_user_login.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -52,6 +50,11 @@ class FotografiaListFragment : Fragment() {
         if (item.itemId == R.id.user_logout){
             logout()
         }
+
+        if (item.itemId == R.id.map){
+            findNavController().navigate(R.id.action_fotografiaListFragment_to_mapsFragment)
+        }
+
         if (item.itemId == R.id.fotografia_list_refresh){
             _view?.let { getAndSetData(it) }
         }
