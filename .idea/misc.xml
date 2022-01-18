@@ -19,8 +19,8 @@
         <entry key="app/src/main/res/layout/custom_row.xml" value="0.25" />
         <entry key="app/src/main/res/layout/custom_row_fotografias_list.xml" value="0.4370471014492754" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.24651776403965095" />
-        <entry key="app/src/main/res/layout/fragment_add_fotografia.xml" value="0.4370471014492754" />
-        <entry key="app/src/main/res/layout/fragment_fotografias_list.xml" value="0.4370471014492754" />
+        <entry key="app/src/main/res/layout/fragment_add_fotografia.xml" value="0.1716485507246377" />
+        <entry key="app/src/main/res/layout/fragment_fotografias_list.xml" value="0.1716485507246377" />
         <entry key="app/src/main/res/layout/fragment_list.xml" value="0.20969202898550723" />
         <entry key="app/src/main/res/layout/fragment_list_adapater.xml" value="0.4142512077294686" />
         <entry key="app/src/main/res/layout/fragment_list_adapter.xml" value="0.27557510565997084" />

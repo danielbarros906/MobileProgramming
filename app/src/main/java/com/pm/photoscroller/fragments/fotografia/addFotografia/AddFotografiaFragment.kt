@@ -33,17 +33,6 @@ class AddFotografiaFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_add_fotografia, container, false)
         setHasOptionsMenu(true)
 
-
-        view.add_fotografia_title.setText("ola");
-        view.add_fotografia_description.setText("mundo");
-        view.add_fotografia_aperture.setText("100");
-        view.add_fotografia_ISO.setText("300");
-        view.add_fotografia_location.setText("Porto");
-        view.add_fotografia_shutter.setText("60");
-        view.add_fotografia_photo_path.setText("caminho");
-
-
-
         return view
     }
 

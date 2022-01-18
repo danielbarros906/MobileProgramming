@@ -43,6 +43,7 @@ class UpdateFotografiaFragment : Fragment() {
         view.update_fotografia_shutter.setText(args.currentPic.shutter)
 
 
+
         return view
     }
 

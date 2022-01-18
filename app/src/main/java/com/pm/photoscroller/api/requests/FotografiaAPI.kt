@@ -13,7 +13,7 @@ interface FotografiaAPI {
 
     @FormUrlEncoded
     @POST ("photos/create")
-    @Headers("Content-Type: application/json")
+    //@Headers("Content-Type: application/json")
     fun createFotografia(
         @Header("Authorization") token: String,
         @Field("users_id") users_id: String?,
@@ -36,7 +36,7 @@ interface FotografiaAPI {
         @Field("aperture") aperture: String,
         @Field("shutter") shutter: String,
         @Field("iso") iso: String,
-        @Field("location") location: String,
+        @Field("location") location: String
     ): Call<FotografiaDto>
 
     @FormUrlEncoded
